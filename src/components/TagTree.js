@@ -13,7 +13,7 @@ const TagTree = ({ setShowJson, setJsonTree }) => {
     const newChild = { name: "New Child", data: "Data" };
 
     // deleting data property of parent
-    delete parent.data;
+    if (!parent.children) delete parent.data;
 
     // Create a new children array with the new child appended
     const newChildren = parent.children
