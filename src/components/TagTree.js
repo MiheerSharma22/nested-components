@@ -33,12 +33,6 @@ const TagTree = ({ setShowJson, setJsonTree }) => {
     setTree({ ...tree });
   };
 
-  const handleExport = async () => {
-    setShowJson(true);
-    setJsonTree("");
-    setJsonTree(tree);
-  };
-
   return (
     <div className="w-[60%] mx-auto gap-10 flex flex-col items-center">
       <TagView
@@ -47,13 +41,6 @@ const TagTree = ({ setShowJson, setJsonTree }) => {
         onEditName={handleEditName}
         onEditData={handleEditData}
       />
-      {/* export button */}
-      <button
-        className="place-self-start px-[1.3rem] py-[0.3rem] flex items-center bg-gray-200 hover:bg-gray-300 rounded-md border border-gray-200 transition-all duration-150"
-        onClick={handleExport}
-      >
-        Export
-      </button>
     </div>
   );
 };
