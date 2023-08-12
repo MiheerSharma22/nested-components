@@ -33,7 +33,7 @@ const TagView = ({ tag, onAddChild, onEditName, onEditData }) => {
           {/* collapse button */}
           <button
             onClick={handleToggleCollapse}
-            className=" mr-2 px-[1.3rem] py-[0.3rem] flex items-center bg-gray-100 "
+            className="rounded-sm mr-2 px-[1.3rem] py-[0.3rem] flex items-center bg-gray-100 "
           >
             {collapsed ? ">" : "v"}
           </button>
@@ -51,7 +51,7 @@ const TagView = ({ tag, onAddChild, onEditName, onEditData }) => {
         {/* add child button */}
         <button
           onClick={() => onAddChild(tag)}
-          className=" px-[1.3rem] py-[0.3rem] flex items-center bg-gray-100 "
+          className="rounded-sm px-[1.3rem] py-[0.3rem] flex items-center bg-gray-100 "
         >
           Add Child
         </button>
@@ -60,7 +60,7 @@ const TagView = ({ tag, onAddChild, onEditName, onEditData }) => {
       {/* data / children container */}
       {/* if not collapsed then show the window */}
       {!collapsed && (
-        <div className="p-3 flex flex-col gap-2">
+        <div className="p-3 pr-0 flex flex-col gap-2">
           {/* if current tag has no children then show its data else render its children */}
           {!tag.children ? (
             <span className="flex items-center gap-2">

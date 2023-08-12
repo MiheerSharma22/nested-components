@@ -49,7 +49,7 @@ const TagTree = ({ setShowJson, setJsonTree }) => {
       />
       {/* export button */}
       <button
-        className="place-self-start px-[1.3rem] py-[0.3rem] flex items-center bg-gray-200 hover:bg-gray-300 rounded-md border border-gray-200 transition-all duration-150"
+        className="place-self-start mb-2 px-[1.3rem] py-[0.3rem] flex items-center bg-gray-300 hover:bg-gray-200 rounded-md border border-gray-200 transition-all duration-150"
         onClick={handleExport}
       >
         Export
